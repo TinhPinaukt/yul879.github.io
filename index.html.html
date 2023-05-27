@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:rgb(0, 0, 0);">
+
+<link rel="stylesheet" href="crazy.css">
+
+<title>TINH PINAU</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+height: 100%;
+color: #00ffd9;
+line-height: 1.8;
+
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+background-image: url('/D:\/k.PNG');
+min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+background-image: url("/D:\/lol.jpg");
+min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+background-image: url("/D:\//pp.jpg");
+min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: scroll;
+  min-height: 400px;
+}
+}
+
+
+
+
+
+
+
+
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  color: rgb(0, 249, 224);
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #731f1f;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #00f863, #ff2a00, #ff0048, #d700fd, #001aff, #00f4c7, #660707, #be086992);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+  a{
+    position: relative;
+    display: inline-block;
+    padding: 1px 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(221, 0, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: .5s;
+    overflow: hidden;
+    margin-right: 3px;
+  }
+
+  a:first-child{
+    filter: hue-rotate(90deg);
+  }
+  a:last-child{
+    filter: hue-rotate(225deg);
+  }
+  a span{
+    position: absolute;
+    display: block;
+  }
+  a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,rgb(6, 15, 184));
+    animation: animatel 1s infinite;
+  }
+  @keyframes animatel{
+    0%{
+      left: -1000%;
+    }
+    1000%{
+      left: 1000%;
+    }
+  }
+  a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 1000%;
+    background: linear-gradient(180deg,transparent,rgb(251, 1, 255));
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+  }
+  @keyframes animate2 {
+    0%{
+      top: -1000%;
+    }
+    1000%{
+      top: 1000%;
+    }
+  }
+  a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 1000%;
+    height: 1px;
+    background: linear-gradient(270deg,transparent,rgb(255, 0, 0));
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+  }
+  @keyframes anmimate3{
+    0%{
+      right: -1000%;
+    }
+    1000%{
+      right: 1000%;
+    }
+  }
+  a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 1000%;
+    background: linear-gradient(360deg,transparent,rgb(0, 255, 81));
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+  }
+  @keyframes animate4{
+    0%{
+      bottom: -1000%;
+    }
+    1000%{
+      bottom: 1000%;
+    }
+  }
+
+  a:hover{
+  background-color: rgb(153, 0, 255);
+  color: rgb(0, 255, 251);
+  box-shadow: 0 0 5px #f4bc03,
+        0 0 25px #03f480,
+        0 0 50px #e840e2,
+        0 0 200px #03f480;
+  -webkit-box-reflect:below 1px linear-gradient(transparent,rgb(255, 0, 174));
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar" id="myNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i>
+    
+  </a>
+  <a href="#home"  class class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i>HOME 
+     <span></span>
+    <span></span>
+    <span></span>
+    <span></span></a>
+  
+  <a href="#about" class class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span></a>
+    
+  <a href="#portfolio" class  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span></a>
+    
+  <a href="#contact" class class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT 
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <i class="fa fa-search"></i>
+  </a>
+</div>
+
+<!-- Navbar on small screens -->
+
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+  <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+</div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="w3-display-middle" style="white-space:nowrap;">
+   
+  <a span class="gradient-border" id="box">WELCOME 
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span></a>
+ 
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="home">
+<div class="w3-content w3-container w3-padding-64" id="home">
+<h3 class="w3-center" >The benefits of reading a book</h3>
+<p>Reading a book has numerous benefits, including:</p>
+ <h1> 1. Mental stimulation: Reading exercises your brain and improves your cognitive function, including memory, focus, and concentration.</h1>
+  <h2>2. Stress reduction: Reading can help reduce stress and anxiety by providing an escape from the stresses of daily life.</h2>
+<h3>3. Vocabulary expansion: Reading exposes you to new words and phrases, which can help expand your vocabulary and improve your communication skills.</h3>
+<h4> 4. Knowledge acquisition: Reading is a great way to learn about different cultures, perspectives, and topics, which can broaden your knowledge and understanding of the world.</h4>
+<h5>5. Improved empathy: Reading fiction can help improve your empathy and emotional intelligence by allowing you to see the world through different characters' eyes.</h5>
+<h6> 6. Entertainment: Reading is a fun and enjoyable way to pass the time, and can provide hours of entertainment and enjoyment.
+  Overall, reading is a valuable activity that offers numerous benefits for personal growth, development, and enjoyment</h6>
+<div class="w3-row">
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT ME</h3>
+  <div class="w3-col m6 w3-center w3-padding-large">
+    <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+    <img src="/D:\/lop.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  </div>
+
+  <!-- Hide this text on small devices -->
+  <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>Hello! My name is Tinh Pino, I was born on February 2, 2002, my hometown is Chronol Thmey, Chit Borey, Kratie Province.
+        I am a new student and study two skills at RPITSE and UME. In my free time I like wacthing cartoons and reading books.
+         I do not like playing games but my friends invite me and  I like to study research.
+         🤭 If you want to know your future Look at the present.🤭</p>
+  </div>
+
+</div>
+<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+<p class="w3-wide"><i class="fa fa-book"></i>reading</p>
+<div class="w3-light-grey">
+  <div class="gradient-border" id="box" 
+  class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+</div>
+<p class="w3-wide"><i class="fa fa-watching fa-television"></i>watching cartoon</p>
+<div class="w3-light-grey">
+  <div class="gradient-border" id="box" 
+  class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+</div>
+<p class="w3-wide"><i class="fa fa-music"></i>listen to music</p>
+<div class="w3-light-grey">
+  <div class="gradient-border" id="box" 
+  class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+</div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<div class="w3-quarter w3-section">
+  <span class="w3-xlarge">20%🤭</span><br>
+  Partners
+  
+</div>
+<div class="w3-quarter w3-section">
+  <span class="w3-xlarge">20%😩</span><br>
+  Projects Done
+</div>
+<div class="w3-quarter w3-section">
+  <span class="w3-xlarge">10%😒</span><br>
+  Happy 
+</div>
+<div class="w3-quarter w3-section">
+  <span class="w3-xlarge">-100%🥺</span><br>
+  Meeting
+</div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+  <span class="w3-xxlarge w3-text-white w3-wide"></span>
+</div>
+</div>
++
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<h3 class="w3-center">MY WORK</h3>
+<p class="w3-center"><em>AT STUDENT<br>
+</em></p><br>
+
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="w3-row-padding w3-center">
+  <div class="w3-col m3">
+    <img src="/D:\/myname.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="/D:\/COD.jpg" height="375" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="/D:\/ddo.PNG" height="375" style="width:210%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+  </div>
+
+
+ 
+</div>
+
+<div class="w3-row-padding w3-center w3-section">
+  <div class="w3-col m3">
+    <img src="/D:\/peples.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="/D:\/man.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="/D:\/pp.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="/D:\/WW.jpg" height="360" style="width:108%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+  </div>
+ 
+</div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+  <img id="img01" class="w3-image">
+  <p id="caption" class="w3-opacity w3-large"></p>
+</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+    <a span class="gradient-border" id="box">CONTACT
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span></a>
+</div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+<h3 class="w3-center">WHERE I WORK</h3>
+<p class="w3-center"><em>I'd love your feedback!</em></p>
+
+<div class="w3-row w3-padding-32 w3-section">
+  <div class="w3-col m4 w3-container">
+    <img src="//D:hj.jpg" class="w3-image w3-round" style="width:100%">
+  </div>
+  <div class="w3-col m8 w3-panel">
+    <div class="w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> kratie province<br>
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:088......./066.....<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tinhpinau@umekratie.edu.kh<br>
+    </div>
+    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+      <button class="w3-button w3-black w3-right w3-section" type="submit">
+       <a span class class="fa fa-paper-plane"></i> SEND MESSAGE
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span></a>
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+
+<footer class="w3-center w-black w6-padding-64 w8-opacity w8-hover-opacity-off">
+
+<div class="rainbow">
+    <p><a href="#home" class="w8-button w8-light-grey"><i class="fa fa-arrow-up w3-margin-right" class="rainbow"></i>To the top</a> <code></code></p>
+  </div>
+  
+  <div class="warning">
+    <p>⚠️ Your browser does not support <a href="https://web.dev/css-individual-transform-properties/">@property</a> so the animation won’t work<br />Please use Chrome.</p>
+  </div>
+<style>
+    :root {
+      --angle: 1deg;
+      --opacity: 0.5;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    .rainbow {
+      width: 1000px;
+      height: 30px;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: auto;
+    
+      display: grid;
+      place-content: center;
+      text-align: center;
+    
+      font-size: 1.5em;
+    
+      --border-size: 0.3rem;
+      border: var(--border-size) solid transparent;
+    
+      /* Paint an image in the border */
+      border-image: conic-gradient(
+          from var(--angle),
+          #00e5ff 0deg 90deg,
+          #038bd0 90deg 180deg,
+          #00ff2a 180deg 270deg,
+          #f4006e 270deg 360deg
+        )
+        1 stretch;
+      background: rgb(255 255 255 / var(--opacity));
+    }
+    
+    /** show a warning in browers that don't support it **/
+    .warning {
+      margin: 2em;
+      padding: 1em;
+      border: 1px solid #ff0000;
+    }
+    .warning p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    /* Animate when Houdini is available */
+    @supports (background: paint(houdini)) {
+      @property --opacity {
+        syntax: "<number>";
+        initial-value: 0.5;
+        inherits: false;
+      }
+    
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+    
+      @keyframes opacityChange {
+        to {
+          --opacity: 1;
+        }
+      }
+    
+      @keyframes rotate {
+        to {
+          --angle: 360deg;
+        }
+      }
+    
+      .rainbow {
+        animation: rotate 1s linear infinite, opacityChange 1s infinite alternate;
+      }
+    
+      /* Hide the warning */
+      .warning {
+        display: none;
+      }
+    }
+    
+    
+    
+    
+     </style>
+
+
+</footer>
+
+
+</script>
+
+</body>
+</html>
